@@ -1,0 +1,52 @@
+@keyframes moveInLeft {
+
+  /* this is the beginning of the animation - initial state 
+  Here the opacity will be 0% */
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem)
+      /* positive value it means it goes to the right and negative value it means it goes to the left */
+  }
+
+  /* but we can put other steps in the middle as well */
+  80% {
+    transform: translateX(1rem);
+  }
+
+  /* this is the end of the animation */
+  100% {
+    opacity: 1;
+    transform: translate(0);
+    /* here we translate 0 because it's going to look the exactly way that it looks right now */
+  }
+}
+
+@keyframes moveInRight {
+
+  0% {
+    opacity: 0;
+    transform: translateX(10rem)
+  }
+
+  80% {
+    transform: translateX(-1rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes moveInBottom {
+
+  0% {
+    opacity: 0;
+    transform: translateY(30px)
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
