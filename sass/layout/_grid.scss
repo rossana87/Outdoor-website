@@ -1,6 +1,5 @@
 .row {
   max-width: $grid-width; //this is in rem and not px 1140px / 10 and always use max-width because it help in the responsive design
-  background-color: #eee;
   margin: 0 auto; //trick to center inside another block element
   margin-bottom: $gutter-vertical;
 
@@ -11,7 +10,6 @@
   @include clearfix;
 
   [class^="col-"] {
-    background-color: orange;
     float: left;
 
     &:not(:last-child) {
