@@ -11,5 +11,11 @@
       rgba($color-primary-dark, 0.8)),
     url(../img/nat-4.jpg);
   background-size: cover;
+  margin-top: -10rem;
+  transform: skewY(-7deg);
 
+  //this take the direct child, which is the class row
+  &>* {
+    transform: skewY(7deg);
+  }
 }
